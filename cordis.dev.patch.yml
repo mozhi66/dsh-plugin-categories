@@ -1,0 +1,6 @@
+# 开发/试用覆盖层：不经安装，直接把构建产物加载进运行中的 profile。
+# 仅用于 `dsh web --patch` 手动验证；正式使用请通过 plugin_manager 安装包本体。
+# 使用前把下面的 name 改成本插件在你机器上的绝对路径（指向 lib/index.js）。
+- insert:
+    - id: plugin-categories
+      name: '<插件所在目录>/lib/index.js'

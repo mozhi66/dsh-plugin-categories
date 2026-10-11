@@ -1,0 +1,28 @@
+# dsh-plugin-categories bundle patch: insert this plugin as a new roster row,
+# carrying the panel's default categorization config:
+#   官方内置 / 内核组件 — @deepseek-ai/* and cordis:* framework rows, bucketed
+#     away from the user's own plugins so a stray "disable all" on the misc
+#     group cannot take DSH itself down (listed first: namePattern matching is
+#     first-hit in this array's order, and dsh-mcp-resources must land in
+#     官方内置 rather than the fuzzy MCP bucket);
+#   皮肤与主题 — skin/theme keyword heuristics (no pattern; runs last anyway);
+#   MCP 服务器 — anything MCP-shaped.
+# Override or extend from the profile's cordis.patch.yml — profile patches
+# apply after this one.
+- insert:
+    - id: plugin-categories
+      name: '@dsh-external/dsh-plugin-categories'
+      config:
+        skinDetection: true
+        categories:
+          - id: official
+            label: 官方内置
+            namePattern: '@deepseek-ai/'
+          - id: kernel
+            label: 内核组件
+            namePattern: 'cordis:'
+          - id: skin
+            label: 皮肤与主题
+          - id: mcp
+            label: MCP 服务器
+            namePattern: mcp

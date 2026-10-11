@@ -1,0 +1,13 @@
+{
+  "id": "plugin-categories",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "description": "Categorize installed DSH plugins (skins, MCP, tools, ...) and batch-enable or disable whole categories; auto-detects skin plugins.",
+  "engines": {
+    "dsh": ">=0.1.0-rc.5"
+  },
+  "contributes": {
+    "tools": ["plugin_categories"],
+    "skills": []
+  }
+}
