@@ -1,0 +1,52 @@
+{
+  "format": 1,
+  "title": {
+    "en": "mozhi66 DSH plugins",
+    "zh-cn": "mozhi66 的 DSH 插件"
+  },
+  "description": {
+    "en": "Personal index of DSH plugins published by mozhi66.",
+    "zh-cn": "mozhi66 发布的 DSH 插件个人索引。"
+  },
+  "metadata": {
+    "categories": {
+      "management": {
+        "title": { "en": "Management", "zh-cn": "管理" }
+      }
+    },
+    "labels": {},
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "@dsh-external/dsh-plugin-categories",
+      "title": {
+        "en": "Plugin Categories",
+        "zh-cn": "插件分类"
+      },
+      "description": {
+        "en": "Plugin Categories for DSH: categorize installed plugins (skins, MCP, tools, ...) and batch-enable or disable whole categories, with automatic skin detection.",
+        "zh-cn": "DSH 插件分类管理：把已安装插件按分类整理（皮肤、MCP、工具……），支持分类批量启停、拖拽排序和皮肤自动识别。"
+      },
+      "author": "mozhi66",
+      "homepage": "https://github.com/mozhi66/dsh-plugin-categories#readme",
+      "repository": { "url": "https://github.com/mozhi66/dsh-plugin-categories" },
+      "metadata": {
+        "category": "management",
+        "keywords": ["plugin", "categories", "organize", "skins", "mcp", "分类"],
+        "labels": []
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1791681507,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/mozhi66/dsh-plugin-categories",
+            "commit": "ec734fc74c5ce19807e89eabe1ace709125963f6"
+          }
+        }
+      ]
+    }
+  ]
+}

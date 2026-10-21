@@ -18,6 +18,17 @@ DeepSeek Harness（DSH）的**分类管理插件的插件**：把当前 profile 
 
 ## 安装
 
+**通过插件市场搜索安装**：DSH → 插件 → **发现** → **添加索引源**，粘贴：
+
+```
+https://raw.githubusercontent.com/mozhi66/dsh-plugin-categories/main/index.json
+```
+
+之后在「发现」里搜索 `分类`、`categories` 或 `@dsh-external` 即可找到本插件并一键安装。
+本仓库根目录的 `index.json` 是 DSH 插件市场索引（format 1，由 `@deepseek-ai/dsh-plugin-market-index` 校验）；
+**发新版本时必须同步更新它**：`version`（精确 SemVer）、`publishTimestamp`（Unix 秒）、
+`source.commit`（40 位完整小写 SHA，`git rev-parse HEAD`），否则市场仍会列出并安装旧版本。
+
 **直装（推荐，无需克隆）**：DSH 设置 → 插件 → **添加插件**，在输入框粘贴仓库地址：
 
 ```
